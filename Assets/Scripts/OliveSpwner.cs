@@ -71,9 +71,8 @@ public class OliveSpawner : MonoBehaviour
         GameObject newOlive = Instantiate(olivePrefab, position, Quaternion.identity);
 
         // Rotácia k stredu
-        Vector3 directionToCenter = pizzaTransform.position - newOlive.transform.position;
-        float angle = Mathf.Atan2(directionToCenter.y, directionToCenter.x) * Mathf.Rad2Deg;
-        newOlive.transform.rotation = Quaternion.Euler(0, 0, angle);
+        float randomZ = Random.Range(0f, 360f);
+        newOlive.transform.rotation = Quaternion.Euler(0, 0, randomZ);
 
         newOlive.transform.SetParent(pizzaTransform);
 

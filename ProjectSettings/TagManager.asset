@@ -7,8 +7,9 @@ TagManager:
   - BlackOlive
   - GreenOlive
   - Wall
-  - Salami
   - Mushroom
+  - Salami
+  - Corn
   layers:
   - Default
   - TransparentFX

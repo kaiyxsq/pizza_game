@@ -2,25 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MushroomSpawner : MonoBehaviour
+public class CornSpawner : MonoBehaviour
 {
     [Header("Čo a kde")]
-    public GameObject mushroomPrefab;   // Sem daj Prefab Hríbu
+    public GameObject cornPrefab;       // Sem daj Prefab Kukurice
     public Transform pizzaTransform;    // Sem pretiahni Pizzu
     public Camera mainCamera;
 
     [Header("Nastavenia Spawnu")]
-    public Vector2 spawnDirection = new Vector2(1, 0); 
+    // Môžeš zmeniť smer, aby kukurica chodila napr. zhora (0, 1) alebo zľava (-1, 0)
+    public Vector2 spawnDirection = new Vector2(0, 1); 
     public float minRadius = 4f;
     public float maxRadius = 9f;
 
     [Header("Časovanie a Limity")]
-    public int maxMushrooms = 5;        // Koľko hríbov max
-    public float minTime = 2.0f;        // Hríby môžu byť pomalšie
-    public float maxTime = 4.0f;
+    public int maxCorn = 10;            // Koľko kukurice max (zvyčajne menej ako olív)
+    public float minTime = 1.0f;        // Kukurica môže chodiť pomalšie
+    public float maxTime = 3.0f;
 
-    // Interné premenné len pre hríby
-    private Queue<GameObject> mushroomQueue = new Queue<GameObject>();
+    // Interné premenné len pre kukuricu
+    private Queue<GameObject> cornQueue = new Queue<GameObject>();
     private float timer = 0f;
     private float currentDelay;
 
@@ -35,7 +36,7 @@ public class MushroomSpawner : MonoBehaviour
 
         if (timer >= currentDelay)
         {
-            TrySpawnMushroom();
+            TrySpawnCorn();
             timer = 0f;
             SetNextSpawnTime();
         }
@@ -46,7 +47,7 @@ public class MushroomSpawner : MonoBehaviour
         currentDelay = Random.Range(minTime, maxTime);
     }
 
-    void TrySpawnMushroom()
+    void TrySpawnCorn()
     {
         for (int i = 0; i < 10; i++)
         {
@@ -68,21 +69,22 @@ public class MushroomSpawner : MonoBehaviour
 
     void SpawnObject(Vector3 position)
     {
-        GameObject newMushroom = Instantiate(mushroomPrefab, position, Quaternion.identity);
+        GameObject newCorn = Instantiate(cornPrefab, position, Quaternion.identity);
+
 
         // Rotácia k stredu
-        float randomRotation = Random.Range(0f, 360f);
-        newMushroom.transform.rotation = Quaternion.Euler(0, 0, randomRotation);
-        
-        newMushroom.transform.SetParent(pizzaTransform);
+        float randomZ = Random.Range(0f, 360f);
+        newCorn.transform.rotation = Quaternion.Euler(0, 0, randomZ);
+
+        newCorn.transform.SetParent(pizzaTransform);
 
         // Pridanie do fronty a kontrola limitu
-        mushroomQueue.Enqueue(newMushroom);
+        cornQueue.Enqueue(newCorn);
 
-        if (mushroomQueue.Count > maxMushrooms)
+        if (cornQueue.Count > maxCorn)
         {
-            GameObject oldMushroom = mushroomQueue.Dequeue();
-            if (oldMushroom != null) Destroy(oldMushroom);
+            GameObject oldCorn = cornQueue.Dequeue();
+            if (oldCorn != null) Destroy(oldCorn);
         }
     }
 }

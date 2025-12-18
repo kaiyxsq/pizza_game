@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1746156784}
-  winningScore: 5000
+  winningScore: 10000
   basePointsPerSecond: 1
   currentScore: 0
   scoreMultiplier: 1
@@ -731,8 +731,6 @@ GameObject:
   - component: {fileID: 1077531687}
   - component: {fileID: 1077531686}
   - component: {fileID: 1077531688}
-  - component: {fileID: 1077531690}
-  - component: {fileID: 1077531689}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -820,115 +818,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: -20
---- !u!60 &1077531689
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1077531685}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6, y: 6}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 2.47, y: -2.27}
-      - {x: 2.99, y: -0.82}
-      - {x: 2.99, y: 0.53999996}
-      - {x: 2.82, y: 0.96999997}
-      - {x: 2.8, y: 0.98999995}
-      - {x: 2.6499999, y: 1.4499999}
-      - {x: 2.6299999, y: 1.4699999}
-      - {x: 2.49, y: 1.77}
-      - {x: 2.47, y: 1.79}
-      - {x: 2.35, y: 2.1599998}
-      - {x: 1.56, y: 2.6499999}
-      - {x: 0.58, y: 2.9199998}
-      - {x: -0.5, y: 2.9199998}
-      - {x: -0.52, y: 2.8999999}
-      - {x: -0.97999996, y: 2.74}
-      - {x: -1, y: 2.72}
-      - {x: -1.4499999, y: 2.58}
-      - {x: -1.4699999, y: 2.56}
-      - {x: -1.8, y: 2.4099998}
-      - {x: -2.29, y: 2.1499999}
-      - {x: -2.6299999, y: 1.4399999}
-      - {x: -2.9099998, y: 0.48}
-      - {x: -2.9099998, y: -0.56}
-      - {x: -2.8899999, y: -0.58}
-      - {x: -2.74, y: -1.05}
-      - {x: -2.72, y: -1.0699999}
-      - {x: -2.6, y: -1.54}
-      - {x: -2.58, y: -1.56}
-      - {x: -2.4299998, y: -1.8499999}
-      - {x: -2.4099998, y: -1.87}
-      - {x: -2.27, y: -2.24}
-      - {x: -1.81, y: -2.59}
-      - {x: -0.55, y: -2.98}
-      - {x: 0.58, y: -2.98}
-      - {x: 0.59999996, y: -2.96}
-      - {x: 1.06, y: -2.82}
-      - {x: 1.13, y: -2.82}
-  m_UseDelaunayMesh: 0
---- !u!50 &1077531690
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1077531685}
-  m_BodyType: 2
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &1086645125
 GameObject:
   m_ObjectHideFlags: 0
@@ -1154,6 +1043,7 @@ GameObject:
   - component: {fileID: 1383502697}
   - component: {fileID: 1383502696}
   - component: {fileID: 1383502695}
+  - component: {fileID: 1383502698}
   m_Layer: 0
   m_Name: Spawner1
   m_TagString: Untagged
@@ -1209,14 +1099,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 642eaa488b44230498019ad0881d7382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mushroomPrefab: {fileID: 0}
-  pizzaTransform: {fileID: 0}
-  mainCamera: {fileID: 0}
-  spawnDirection: {x: 1, y: 0}
-  minRadius: 4
-  maxRadius: 9
-  maxMushrooms: 5
-  minTime: 2
+  mushroomPrefab: {fileID: 6294983054832347925, guid: 65a0cfe9a31fc3c4dbf200cc518a13ca, type: 3}
+  pizzaTransform: {fileID: 1077531687}
+  mainCamera: {fileID: 1994229717}
+  spawnDirection: {x: -1, y: 1}
+  minRadius: 1
+  maxRadius: 28
+  maxMushrooms: 10
+  minTime: 1
   maxTime: 4
 --- !u!114 &1383502696
 MonoBehaviour:
@@ -1260,6 +1150,27 @@ MonoBehaviour:
   maxOlives: 20
   minTime: 0.5
   maxTime: 1.5
+--- !u!114 &1383502698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383502692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da8c915f657489e4581b3f03774d8ddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cornPrefab: {fileID: 5328946861125401855, guid: d35512348fe7139439b36c36396dd02c, type: 3}
+  pizzaTransform: {fileID: 1077531687}
+  mainCamera: {fileID: 1994229717}
+  spawnDirection: {x: -1, y: 1}
+  minRadius: 1
+  maxRadius: 28
+  maxCorn: 4
+  minTime: 1
+  maxTime: 6
 --- !u!1 &1506864050
 GameObject:
   m_ObjectHideFlags: 0
@@ -1574,7 +1485,7 @@ Rigidbody2D:
     serializedVersion: 2
     m_Bits: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!61 &1719352855
@@ -1662,7 +1573,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 5402c9a0e86a7d54694d150d89c5ead0, type: 3}
   m_Color: {r: 0.97735846, g: 0.97735846, b: 0.97735846, a: 1}
   m_FlipX: 0
@@ -1683,7 +1594,7 @@ Transform:
   m_GameObject: {fileID: 1719352853}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1735,6 +1646,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a129516f40bb0a84489339188ba1486c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wallDamagePerSecond: 50
+  salamiDamagePerSecond: 50
 --- !u!1 &1746156783
 GameObject:
   m_ObjectHideFlags: 0
