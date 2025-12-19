@@ -318,7 +318,7 @@ MonoBehaviour:
   winScoreText: {fileID: 1266599723}
   losePanel: {fileID: 1227347892}
   loseScoreText: {fileID: 1470023323}
-  winningScore: 10000
+  winningScore: 15000
   basePointsPerSecond: 1
   currentScore: 0
   scoreMultiplier: 1
@@ -2813,6 +2813,147 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1114637466}
   m_CullTransparentMesh: 1
+--- !u!1 &1121687440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1121687446}
+  - component: {fileID: 1121687445}
+  - component: {fileID: 1121687444}
+  - component: {fileID: 1121687443}
+  - component: {fileID: 1121687442}
+  - component: {fileID: 1121687441}
+  m_Layer: 0
+  m_Name: Spawner1 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1121687441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121687440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 642eaa488b44230498019ad0881d7382, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectPrefab: {fileID: 8659772779987845948, guid: ccaf23506ab91ee48bd373a2e11a262b, type: 3}
+  parentTransform: {fileID: 1077531687}
+  gameCamera: {fileID: 1994229717}
+  spawnDirection: {x: 1, y: 1}
+  minRadius: 1
+  maxRadius: 28
+  maxObjects: 20
+  minTime: 0.5
+  maxTime: 1.5
+--- !u!114 &1121687442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121687440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 642eaa488b44230498019ad0881d7382, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectPrefab: {fileID: 7690305894610638332, guid: ad8fd95ebfe8ee943b0d573be4dedd5e, type: 3}
+  parentTransform: {fileID: 1077531687}
+  gameCamera: {fileID: 1994229717}
+  spawnDirection: {x: 1, y: 1}
+  minRadius: 1
+  maxRadius: 28
+  maxObjects: 20
+  minTime: 0.5
+  maxTime: 1.5
+--- !u!114 &1121687443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121687440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 642eaa488b44230498019ad0881d7382, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectPrefab: {fileID: 5328946861125401855, guid: d35512348fe7139439b36c36396dd02c, type: 3}
+  parentTransform: {fileID: 1077531687}
+  gameCamera: {fileID: 1994229717}
+  spawnDirection: {x: 1, y: 1}
+  minRadius: 1
+  maxRadius: 28
+  maxObjects: 4
+  minTime: 1
+  maxTime: 6
+--- !u!114 &1121687444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121687440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 642eaa488b44230498019ad0881d7382, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectPrefab: {fileID: 6294983054832347925, guid: 65a0cfe9a31fc3c4dbf200cc518a13ca, type: 3}
+  parentTransform: {fileID: 1077531687}
+  gameCamera: {fileID: 1994229717}
+  spawnDirection: {x: 1, y: 1}
+  minRadius: 1
+  maxRadius: 28
+  maxObjects: 5
+  minTime: 1
+  maxTime: 4
+--- !u!114 &1121687445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121687440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 642eaa488b44230498019ad0881d7382, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectPrefab: {fileID: 4279765289926752363, guid: a19f6e5c023274548856ac0b615b4126, type: 3}
+  parentTransform: {fileID: 1077531687}
+  gameCamera: {fileID: 1994229717}
+  spawnDirection: {x: 1, y: 1}
+  minRadius: 1
+  maxRadius: 28
+  maxObjects: 25
+  minTime: 0.5
+  maxTime: 2
+--- !u!4 &1121687446
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121687440}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 15.11, y: 0, z: 0}
+  m_LocalScale: {x: 9, y: 9, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1125962382
 GameObject:
   m_ObjectHideFlags: 0
@@ -4086,147 +4227,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1372935890}
   m_CullTransparentMesh: 1
---- !u!1 &1383502692
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1383502693}
-  - component: {fileID: 1383502694}
-  - component: {fileID: 1383502697}
-  - component: {fileID: 1383502696}
-  - component: {fileID: 1383502695}
-  - component: {fileID: 1383502698}
-  m_Layer: 0
-  m_Name: Spawner1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1383502693
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1383502692}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.11, y: 0, z: 0}
-  m_LocalScale: {x: 9, y: 9, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1383502694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1383502692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b7c37689bd319d4b8f4ee2749f196dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  salamiPrefab: {fileID: 4279765289926752363, guid: a19f6e5c023274548856ac0b615b4126, type: 3}
-  pizzaTransform: {fileID: 1077531687}
-  mainCamera: {fileID: 1994229717}
-  maxRadius: 28
-  minRadius: 1
-  spawnDirection: {x: -1, y: 1}
-  minTimeBetweenSpawns: 0.5
-  maxTimeBetweenSpawns: 2
-  maxSalamis: 25
---- !u!114 &1383502695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1383502692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 642eaa488b44230498019ad0881d7382, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mushroomPrefab: {fileID: 6294983054832347925, guid: 65a0cfe9a31fc3c4dbf200cc518a13ca, type: 3}
-  pizzaTransform: {fileID: 1077531687}
-  mainCamera: {fileID: 1994229717}
-  spawnDirection: {x: 1, y: 1}
-  minRadius: 1
-  maxRadius: 28
-  maxMushrooms: 10
-  minTime: 1
-  maxTime: 4
---- !u!114 &1383502696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1383502692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2354f8cea8c4f294a98fbaea0d559151, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  olivePrefab: {fileID: 7690305894610638332, guid: ad8fd95ebfe8ee943b0d573be4dedd5e, type: 3}
-  pizzaTransform: {fileID: 1077531687}
-  mainCamera: {fileID: 1994229717}
-  spawnDirection: {x: 1, y: 1}
-  minRadius: 1
-  maxRadius: 28
-  maxOlives: 20
-  minTime: 0.5
-  maxTime: 1.5
---- !u!114 &1383502697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1383502692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2354f8cea8c4f294a98fbaea0d559151, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  olivePrefab: {fileID: 8659772779987845948, guid: ccaf23506ab91ee48bd373a2e11a262b, type: 3}
-  pizzaTransform: {fileID: 1077531687}
-  mainCamera: {fileID: 1994229717}
-  spawnDirection: {x: 1, y: 1}
-  minRadius: 1
-  maxRadius: 28
-  maxOlives: 20
-  minTime: 0.5
-  maxTime: 1.5
---- !u!114 &1383502698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1383502692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da8c915f657489e4581b3f03774d8ddf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cornPrefab: {fileID: 5328946861125401855, guid: d35512348fe7139439b36c36396dd02c, type: 3}
-  pizzaTransform: {fileID: 1077531687}
-  mainCamera: {fileID: 1994229717}
-  spawnDirection: {x: 1, y: 1}
-  minRadius: 1
-  maxRadius: 28
-  maxCorn: 4
-  minTime: 1
-  maxTime: 6
 --- !u!1 &1430117443
 GameObject:
   m_ObjectHideFlags: 0
@@ -5635,7 +5635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96fc222a0a8c4ef4e815d84057c8700c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 7
 --- !u!95 &1719352859
 Animator:
   serializedVersion: 5
@@ -6218,7 +6218,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 1994229718}
   - {fileID: 1719352857}
-  - {fileID: 1383502693}
+  - {fileID: 1121687446}
   - {fileID: 1077531687}
   - {fileID: 2111329325}
   - {fileID: 74506398}
