@@ -1,24 +1,10 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MenuController : MonoBehaviour
+public class MainMenuController : MonoBehaviour
 {
-    public GameObject menuPanel;
-    private bool isMenuOpen = true;
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            ToggleMenu();
-        }
-    }
-
-    public void ToggleMenu()
-    {
-        isMenuOpen = !isMenuOpen; //changes the state of menu (opened/closed)
-        menuPanel.SetActive(isMenuOpen); //openes/closes menu
-    }
+    // Tento skript patrí len do scény "MainMenu".
+    // Priraď tieto funkcie na tlačidlá (Buttons) v menu.
 
     public void LoadLevel1()
     {
@@ -38,5 +24,12 @@ public class MenuController : MonoBehaviour
     public void LoadLevel4()
     {
         SceneManager.LoadScene("Level4");
+    }
+
+    // Funkcia na vypnutie hry (dobré mať v hlavnom menu)
+    public void QuitGame()
+    {
+        Debug.Log("Hra sa vypína...");
+        Application.Quit();
     }
 }
