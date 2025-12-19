@@ -120,7 +120,7 @@ public class GameManager : MonoBehaviour
         if (scoreText != null)
         {
             // Odstránil som SetActive(true), lebo ho zapíname v Resume/Continue funkciách
-            scoreText.text = "Body: " + (int)currentScore + "\nNásobič: x" + scoreMultiplier;
+            scoreText.text = "Score: " + (int)currentScore + "\nMultiplier: x" + scoreMultiplier;
         }
     }
 

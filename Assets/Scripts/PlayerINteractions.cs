@@ -16,7 +16,6 @@ public class PlayerInteraction : MonoBehaviour
 
         switch (other.tag)
         {
-            // TOTO SME ZMENILI NA BlackOlive
             case "BlackOlive":
                 GameManager.instance.AddScore(200);
                 Destroy(other.gameObject); // Zje sa a zmizne
